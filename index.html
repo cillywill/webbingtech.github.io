@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WebbingTech - Free Access and Management of High-Quality Information</title>
+    <meta name="description" content="WebbingTech is a collection of network tools designed to help Internet users access and manage high-quality information more freely, as well as to help users resist the invasion of bad information.">
+    <meta name="keywords" content="WebbingTech, network tools, high-quality information, bad information, Internet users">
+    <meta name="google-site-verification" content="T4weX2KOs_lxmyV6uNRXG2gP4TGc3dQRmdls2Uk3_ug" />
+    <style>
+      /* 将语言切换按钮定位到右上角 */
+      .language-switch {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WebbingTech</h1>
+    <p>WebbingTech is a collection of network tools designed to help Internet users access and manage high-quality information more freely, as well as to help users resist the invasion of bad information.</p>
+    <h2>Our Tools</h2>
+    <ul>
+      <li>WeChat backup viewer and analyzer (developing)</li>
+      <li>Social Noise Filter: a chrome extension to help filter social noise and save life, support twitter, weibo, facebook and youtube, <a href="https://chrome.google.com/webstore/detail/filter-social-noise/dkhcliboeakaeonegphhhjbelilnbfaf">Download</a></li>
+      <li>flutter_silk: Silk Audio Transcoding Flutter Plugin, <a href="https://pub.dev/packages/flutter_silk">Download</a></li>
+    </ul>
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide Internet users with more free, secure, and reliable network tools, help users better manage and access high-quality information, and resist the invasion of bad information.</p>
+    <div class="language-switch">
+      <a href="?lang=en">English</a> | <a href="?lang=zh">中文</a>
+    </div>
+    <script>
+      // 获取 URL 中的语言参数
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang');
+      // 如果语言参数为中文，将页面切换为中文版本
+      if (lang === 'zh') {
+        document.querySelector('h1').textContent = 'WebbingTech - 自由获取和管理优质信息';
+        document.querySelector('p').textContent = 'WebbingTech 是一系列网络工具集合，旨在帮助广大互联网用户更自由的获取和管理优质信息，以及帮助用户抵御不良信息的袭扰。';
+        document.querySelector('h2').textContent = '我们的工具';
+        document.querySelectorAll('li')[0].textContent = '微信备份数据查看和分析工工具（开发中）';
+        document.querySelectorAll('li')[1].innerHTML = '社交噪音过滤 Chrome 插件，<a href="https://chrome.google.com/webstore/detail/filter-social-noise/dkhcliboeakaeonegphhhjbelilnbfaf">Download</a>';
+        document.querySelectorAll('li')[2].innerHTML = 'flutter_silk 开源库，<a href="https://pub.dev/packages/flutter_silk">Download</a>';
+        document.querySelector('h2:last-of-type').textContent = '我们的使命';
+        document.querySelector('p:last-of-type').textContent = '我们的使命是为广大互联网用户提供更自由、更安全、更可靠的网络工具，帮助用户更好地管理和获取优质信息，同时抵御不良信息的袭扰。';
+      } else {
+        // 如果语言参数为英文或未指定，将页面切换为英文版本
+        document.querySelector('h1').textContent = 'WebbingTech - Free Access and Management of High-Quality Information';
+        document.querySelector('p').textContent = 'WebbingTech is a collection of network tools designed to help Internet users access and manage high-quality information more freely, as well as to help users resist the invasion of bad information.';
+        document.querySelector('h2').textContent = 'Our Tools';
+        document.querySelectorAll('li')[0].textContent = 'WeChat backup viewer and analyzer (developing).';
+        document.querySelectorAll('li')[1].innerHTML = 'Social Noise Filter: a chrome extension to help filter social noise and save life, support twitter, weibo, facebook and youtube.  <a href="https://chrome.google.com/webstore/detail/filter-social-noise/dkhcliboeakaeonegphhhjbelilnbfaf">Download</a>';
+        document.querySelectorAll('li')[2].innerHTML = 'flutter_silk: Silk Audio Transcoding Flutter Plugin. <a href="https://pub.dev/packages/flutter_silk">Download</a>';
+        document.querySelector('h2:last-of-type').textContent = 'Our Mission';
+        document.querySelector('p:last-of-type').textContent = 'Our mission is to provide Internet users with more free, secure, and reliable network tools, help users better manage and access high-quality information, and resist the invasion of bad information.';
+      }
+    </script>
+  </body>
+</html>
